@@ -10,31 +10,37 @@ window.addEventListener('scroll', () => {
 const toggle = document.querySelector('.nav__toggle');
 const navLinks = document.querySelector('.nav__links');
 if (toggle && navLinks) {
-  toggle.addEventListener('click', () => {
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     navLinks.classList.toggle('open');
   });
   // Close on link click
   navLinks.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => navLinks.classList.remove('open'));
   });
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target)) {
+      navLinks.classList.remove('open');
+    }
+  });
 }
 
-// ── Scroll-reveal animation
+// ── Scroll-reveal — uses CSS .reveal / .visible classes
+// so content is never invisible if JS is slow to parse
 const observer = new IntersectionObserver(
   (entries) => entries.forEach(e => {
     if (e.isIntersecting) {
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'translateY(0)';
+      e.target.classList.add('visible');
+      observer.unobserve(e.target); // only animate once
     }
   }),
-  { threshold: 0.08 }
+  { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
 );
 
 document.querySelectorAll(
-  '.feature-card, .showcase__row, .step, .device-card, .tour-card, .guide-step, .faq-item'
+  '.feature-card, .showcase__row, .step, .device-card, .tour-card, .guide-step, .faq-item, .tour-card, .help-banner'
 ).forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(24px)';
-  el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+  el.classList.add('reveal');
   observer.observe(el);
 });

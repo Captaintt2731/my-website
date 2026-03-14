@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="How to watch movies and TV shows on Jellyfin — a step-by-step guide for every device." />
+  <meta name="robots" content="noindex, nofollow" />
   <title>Movies &amp; TV — Teancum's Home Lab</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -20,7 +24,7 @@
         <li><a href="index.html" class="nav__link">Home</a></li>
         <li><a href="jellyfin.html" class="nav__link active">Movies &amp; TV</a></li>
         <li><a href="immich.html" class="nav__link">Photos</a></li>
-        <li><a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="nav__link nav__link--cta">Open Jellyfin →</a></li>
+        <li><a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="nav__link nav__link--cta">Open Jellyfin →</a></li>
       </ul>
       <button class="nav__toggle" aria-label="Menu">&#9776;</button>
     </div>
@@ -32,9 +36,17 @@
       <p class="hero__eyebrow">Your personal streaming service</p>
       <h1 class="page-hero__title">Movies &amp; TV with <span style="color:var(--jellyfin)">Jellyfin</span></h1>
       <p class="page-hero__sub">Everything you need to start watching — explained simply.</p>
-      <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="btn btn--jellyfin">Open Jellyfin Now →</a>
+      <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="btn btn--jellyfin">Open Jellyfin Now →</a>
     </div>
   </section>
+
+  <!-- ───── HELP BANNER ───── -->
+  <div class="container">
+    <div class="help-banner">
+      <p><strong>Need help or don't have an account yet?</strong> Teancum is one message away.</p>
+      <a href="mailto:teancum.stephens@gmail.com" class="btn btn--ghost btn--sm">✉ teancum.stephens@gmail.com</a>
+    </div>
+  </div>
 
   <!-- ───── WHAT IS IT ───── -->
   <section class="section explainer">
@@ -85,7 +97,7 @@
         <div class="guide-step__num">Step 1</div>
         <h3>Open Jellyfin in your browser</h3>
         <p>
-          Go to <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="inline-link">jellyfin.teancumshomelab.com</a>
+          Go to <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="inline-link">jellyfin.teancumshomelab.com</a>
           in any web browser (Chrome, Safari, Firefox, Edge — they all work).
           You can also bookmark it for easy access later.
         </p>
@@ -97,9 +109,10 @@
         <h3>Sign in with your credentials</h3>
         <p>
           Enter the username and password that Teancum gave you. If you've forgotten them,
-          just ask! Check the "Remember me" box so you don't have to type it every time.
+          email <a href="mailto:teancum.stephens@gmail.com" class="inline-link">teancum.stephens@gmail.com</a> and he'll reset it for you.
+          Check the "Remember me" box so you don't have to type it every time.
         </p>
-        <div class="tip">💡 <strong>Tip:</strong> Your login is just for you. Don't share it — if you want to give access to a family member, ask Teancum to set up a separate account.</div>
+        <div class="tip">💡 <strong>Tip:</strong> Your login is just for you. Don't share it — if a family member wants access, ask Teancum to set up a separate account.</div>
       </div>
 
       <div class="guide-step">
@@ -145,7 +158,7 @@
         <div class="device-card">
           <div class="device-card__icon">💻</div>
           <h3>Computer (any browser)</h3>
-          <p>Open <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="inline-link">jellyfin.teancumshomelab.com</a> in Chrome, Edge, Firefox, or Safari. Sign in and watch. No app needed.</p>
+          <p>Open <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="inline-link">jellyfin.teancumshomelab.com</a> in Chrome, Edge, Firefox, or Safari. Sign in and watch. No app needed.</p>
         </div>
 
         <div class="device-card">
@@ -153,7 +166,7 @@
           <h3>iPhone / iPad</h3>
           <ol>
             <li>Open Safari</li>
-            <li>Go to <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="inline-link">jellyfin.teancumshomelab.com</a></li>
+            <li>Go to <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="inline-link">jellyfin.teancumshomelab.com</a></li>
             <li>Sign in and watch directly in the browser</li>
             <li><em>Optional:</em> Install <strong>Infuse</strong> from the App Store for a premium experience — ask Teancum for setup help</li>
           </ol>
@@ -164,7 +177,7 @@
           <h3>Android Phone / Tablet</h3>
           <ol>
             <li>Open Chrome or any browser</li>
-            <li>Go to <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="inline-link">jellyfin.teancumshomelab.com</a></li>
+            <li>Go to <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="inline-link">jellyfin.teancumshomelab.com</a></li>
             <li>Sign in and stream</li>
             <li><em>Optional:</em> Install the <strong>Jellyfin Android app</strong> from Google Play for an app-like experience</li>
           </ol>
@@ -204,7 +217,7 @@
 
         <details class="faq-item">
           <summary>I forgot my password. How do I get back in?</summary>
-          <p>Just contact Teancum and he'll reset it for you. There's no self-service password reset — this keeps the server secure.</p>
+          <p>Email <a href="mailto:teancum.stephens@gmail.com" class="inline-link">teancum.stephens@gmail.com</a> and Teancum will reset it for you quickly.</p>
         </details>
 
         <details class="faq-item">
@@ -219,14 +232,26 @@
 
         <details class="faq-item">
           <summary>I don't see a movie I want. Can it be added?</summary>
-          <p>Possibly! Just ask Teancum and he'll look into adding it to the library.</p>
+          <p>Possibly! Email <a href="mailto:teancum.stephens@gmail.com" class="inline-link">teancum.stephens@gmail.com</a> with a request and Teancum will look into adding it.</p>
         </details>
 
         <details class="faq-item">
           <summary>Is this legal?</summary>
-          <p>Jellyfin is legal software. Whether any specific content is available depends on Teancum's library. This is a private service for approved users only.</p>
+          <p>Jellyfin is free open-source software Teancum uses to organize and stream media he owns. This is a private library for approved guests only.</p>
         </details>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── NEXT STEPS ───── -->
+  <section class="next-steps section">
+    <div class="container" style="text-align:center">
+      <h2 class="section__title">All set?</h2>
+      <p class="section__sub">Jump right in, or explore the photos app too.</p>
+      <div class="next-steps__actions">
+        <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="btn btn--jellyfin">🎬 Open Jellyfin Now →</a>
+        <a href="immich.html" class="btn btn--ghost">Explore Photos →</a>
       </div>
     </div>
   </section>
@@ -238,12 +263,13 @@
         <div class="footer__brand">
           <span class="footer__logo">Teancum's Home Lab</span>
           <p>Private. Reliable. Always on.</p>
+          <p class="footer__contact">Need help? <a href="mailto:teancum.stephens@gmail.com">teancum.stephens@gmail.com</a></p>
         </div>
         <div class="footer__links">
           <a href="index.html">Home</a>
           <a href="immich.html">Photos Guide</a>
-          <a href="https://jellyfin.teancumshomelab.com/" target="_blank">Open Jellyfin</a>
-          <a href="https://immich.teancumshomelab.com/auth/login" target="_blank">Open Immich</a>
+          <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer">Open Jellyfin</a>
+          <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" rel="noopener noreferrer">Open Immich</a>
         </div>
       </div>
       <p class="footer__copy">Hosted with ❤️ by Teancum</p>

@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your private streaming and photo library — Jellyfin and Immich, hosted by Teancum." />
+  <meta name="robots" content="noindex, nofollow" />
   <title>Teancum's Home Lab — Your Private Streaming &amp; Photos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -29,9 +33,7 @@
   <!-- ───── HERO ───── -->
   <section class="hero">
     <div class="hero__bg"></div>
-    <div class="hero__content container">
-      <p class="hero__eyebrow">Welcome to your private media library</p>
-      <pre class="hero__ascii">__/\\\\\\\\\\\\\\\______________________________________________________________________________________________/\\\\_________________________/\\\________/\\\___________________________________________________/\\\_____________________________/\\\________
+    <pre class="hero__ascii">__/\\\\\\\\\\\\\\\______________________________________________________________________________________________/\\\\_________________________/\\\________/\\\___________________________________________________/\\\_____________________________/\\\________
  _\///////\\\/////______________________________________________________________________________________________\///\\________________________\/\\\_______\/\\\__________________________________________________\/\\\____________________________\/\\\________
   _______\/\\\____________________________________________________________________________________________________/\\/_________________________\/\\\_______\/\\\__________________________________________________\/\\\____________________________\/\\\________
    _______\/\\\___________/\\\\\\\\___/\\\\\\\\\_____/\\/\\\\\\_______/\\\\\\\\__/\\\____/\\\____/\\\\\__/\\\\\___\//_____/\\\\\\\\\\___________\/\\\\\\\\\\\\\\\_____/\\\\\_______/\\\\\__/\\\\\_______/\\\\\\\\__\/\\\______________/\\\\\\\\\____\/\\\________
@@ -40,15 +42,22 @@
       _______\/\\\_______\//\\///////____/\\\/////\\\__\/\\\___\/\\\_\//\\\________\/\\\___\/\\\_\/\\\__\/\\\__\/\\\________\////////\\\___________\/\\\_______\/\\\_\//\\\__/\\\__\/\\\__\/\\\__\/\\\_\//\\///////___\/\\\______________/\\\/////\\\__\/\\\__\/\\\_
        _______\/\\\________\//\\\\\\\\\\_\//\\\\\\\\/\\_\/\\\___\/\\\__\///\\\\\\\\_\//\\\\\\\\\__\/\\\__\/\\\__\/\\\_________/\\\\\\\\\\___________\/\\\_______\/\\\__\///\\\\\/___\/\\\__\/\\\__\/\\\__\//\\\\\\\\\\_\/\\\\\\\\\\\\\\\_\//\\\\\\\\/\\_\/\\\\\\\\\__
         _______\///__________\//////////___\////////\//__\///____\///_____\////////___\/////////___\///___\///___\///_________\//////////____________\///________\///_____\/////_____\///___\///___\///____\//////////__\///////////////___\////////\//__\/////////___</pre>
+    <div class="hero__content container">
+      <p class="hero__eyebrow">Welcome to your private media library</p>
+      <h1 class="hero__title gradient-text">Teancum's Home Lab</h1>
       <p class="hero__subtitle">
         No subscriptions. No ads. No data harvesting.<br />
         Stream anything, view your photos, from any device — anywhere.
       </p>
+      <p class="hero__precheck">
+        New here? You'll need an account first —
+        <a href="mailto:teancum.stephens@gmail.com">contact Teancum to get set up</a>.
+      </p>
       <div class="hero__actions">
-        <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="btn btn--jellyfin">
+        <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="btn btn--jellyfin">
           🎬 Open Movies &amp; TV
         </a>
-        <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" class="btn btn--immich">
+        <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" rel="noopener noreferrer" class="btn btn--immich">
           📷 Open Photos
         </a>
       </div>
@@ -74,14 +83,14 @@
             Works on your phone, tablet, smart TV, laptop — or any web browser.
           </p>
           <ul class="feature-list">
-            <li>✔ HD &amp; 4K streaming</li>
-            <li>✔ Watch on any device</li>
-            <li>✔ Resume where you left off</li>
-            <li>✔ Subtitles in many languages</li>
-            <li>✔ No ads, ever</li>
+            <li>HD &amp; 4K streaming</li>
+            <li>Watch on any device</li>
+            <li>Resume where you left off</li>
+            <li>Subtitles in many languages</li>
+            <li>No ads, ever</li>
           </ul>
           <div class="feature-card__actions">
-            <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="btn btn--jellyfin btn--sm">
+            <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="btn btn--jellyfin btn--sm">
               Open Jellyfin →
             </a>
             <a href="jellyfin.html" class="btn btn--ghost btn--sm">How to use it</a>
@@ -96,14 +105,14 @@
             from your phone, facial recognition, and easy sharing — all private.
           </p>
           <ul class="feature-list">
-            <li>✔ Auto-backup from your phone</li>
-            <li>✔ Search by face, place, or date</li>
-            <li>✔ Create and share albums</li>
-            <li>✔ View a live map of memories</li>
-            <li>✔ 100% private — no cloud snooping</li>
+            <li>Auto-backup from your phone</li>
+            <li>Search by face, place, or date</li>
+            <li>Create and share albums</li>
+            <li>View a live map of memories</li>
+            <li>100% private — no cloud snooping</li>
           </ul>
           <div class="feature-card__actions">
-            <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" class="btn btn--immich btn--sm">
+            <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" rel="noopener noreferrer" class="btn btn--immich btn--sm">
               Open Immich →
             </a>
             <a href="immich.html" class="btn btn--ghost btn--sm">How to use it</a>
@@ -132,14 +141,18 @@
         </div>
         <div class="showcase__visual showcase__visual--jellyfin">
           <div class="mock-screen">
-            <div class="mock-screen__bar"></div>
-            <div class="mock-screen__content">
-              <div class="mock-grid">
-                <div class="mock-card"></div><div class="mock-card"></div>
-                <div class="mock-card"></div><div class="mock-card"></div>
-                <div class="mock-card"></div><div class="mock-card"></div>
+            <img src="assets/jellyfin-screenshot.png" alt="Jellyfin movie library interface" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+            <div style="display:none">
+              <div class="mock-screen__bar"></div>
+              <div class="mock-screen__content">
+                <div class="mock-grid">
+                  <div class="mock-card"></div><div class="mock-card"></div>
+                  <div class="mock-card"></div><div class="mock-card"></div>
+                  <div class="mock-card"></div><div class="mock-card"></div>
+                </div>
               </div>
             </div>
+            <div class="mock-screen__nowplaying"></div>
           </div>
         </div>
       </div>
@@ -158,13 +171,16 @@
         </div>
         <div class="showcase__visual showcase__visual--immich">
           <div class="mock-screen">
-            <div class="mock-screen__bar"></div>
-            <div class="mock-screen__content">
-              <div class="mock-masonry">
-                <div class="mock-photo mock-photo--tall"></div>
-                <div class="mock-photo"></div>
-                <div class="mock-photo"></div>
-                <div class="mock-photo mock-photo--wide"></div>
+            <img src="assets/immich-screenshot.png" alt="Immich photo timeline interface" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+            <div style="display:none">
+              <div class="mock-screen__bar"></div>
+              <div class="mock-screen__content">
+                <div class="mock-masonry">
+                  <div class="mock-photo mock-photo--tall"></div>
+                  <div class="mock-photo"></div>
+                  <div class="mock-photo"></div>
+                  <div class="mock-photo mock-photo--wide"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -183,7 +199,7 @@
         <div class="step">
           <div class="step__number">1</div>
           <h3>Get your login</h3>
-          <p>Teancum will set up an account for you. You'll receive a username and password — that's all you need.</p>
+          <p>Email <a href="mailto:teancum.stephens@gmail.com" style="color:var(--gold)">teancum.stephens@gmail.com</a> to request an account. You'll receive a username and password.</p>
         </div>
         <div class="step__connector"></div>
         <div class="step">
@@ -195,12 +211,12 @@
         <div class="step">
           <div class="step__number">3</div>
           <h3>Enjoy</h3>
-          <p>Browse, stream, and explore. Need help? Visit the guide pages linked in the menu above.</p>
+          <p>Browse, stream, and explore. Stuck? Email Teancum anytime — he's happy to help.</p>
         </div>
       </div>
       <div class="how-it-works__cta">
-        <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="btn btn--jellyfin">🎬 Go to Movies &amp; TV</a>
-        <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" class="btn btn--immich">📷 Go to Photos</a>
+        <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer" class="btn btn--jellyfin">🎬 Go to Movies &amp; TV</a>
+        <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" rel="noopener noreferrer" class="btn btn--immich">📷 Go to Photos</a>
       </div>
     </div>
   </section>
@@ -212,12 +228,13 @@
         <div class="footer__brand">
           <span class="footer__logo">Teancum's Home Lab</span>
           <p>Private. Reliable. Always on.</p>
+          <p class="footer__contact">Need help? <a href="mailto:teancum.stephens@gmail.com">teancum.stephens@gmail.com</a></p>
         </div>
         <div class="footer__links">
           <a href="jellyfin.html">Movies &amp; TV Guide</a>
           <a href="immich.html">Photos Guide</a>
-          <a href="https://jellyfin.teancumshomelab.com/" target="_blank">Open Jellyfin</a>
-          <a href="https://immich.teancumshomelab.com/auth/login" target="_blank">Open Immich</a>
+          <a href="https://jellyfin.teancumshomelab.com/" target="_blank" rel="noopener noreferrer">Open Jellyfin</a>
+          <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" rel="noopener noreferrer">Open Immich</a>
         </div>
       </div>
       <p class="footer__copy">Hosted with ❤️ by Teancum</p>
