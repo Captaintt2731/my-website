@@ -217,7 +217,7 @@ ul { list-style: none; }
   overflow: hidden;
   color: var(--text);
   margin: 0 auto 28px;
-  text-align: left;
+  text-align: center;
   display: block;
   max-width: 100%;
   opacity: 0.92;
