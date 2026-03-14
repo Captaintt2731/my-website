@@ -110,13 +110,17 @@ ul { list-style: none; }
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 100;
+  z-index: 10000;
   height: var(--nav-h);
   background: rgba(15,15,19,0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.06);
   transition: background 0.3s;
+  /* Force compositor layer promotion — fixes iOS Safari scroll-over bug */
+  transform: translateZ(0);
+  /* Explicit stacking context — prevents backdrop-filter z-index ambiguity */
+  isolation: isolate;
 }
 
 .nav__inner {
@@ -242,28 +246,6 @@ ul { list-style: none; }
   pointer-events: none;
 }
 
-/* ASCII art as decorative watermark behind hero content */
-.hero__ascii {
-  position: absolute;
-  inset: 0;
-  font-family: monospace;
-  font-size: clamp(3px, 0.5vw, 7px);
-  line-height: 1.3;
-  white-space: pre;
-  overflow: hidden;
-  color: var(--text);
-  opacity: 0.07;
-  pointer-events: none;
-  z-index: 0;
-  margin: 0;
-  padding: calc(var(--nav-h) + 40px) 0 0;
-  width: 100%;
-  left: 0;
-  transform: none;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
 
 .hero__content {
   position: relative;
@@ -1118,8 +1100,6 @@ code {
   .feature-card { padding: 28px 20px; }
   .guide-step   { padding: 24px 20px; }
 
-  /* Hide ASCII watermark on mobile — too small to be meaningful */
-  .hero__ascii { display: none; }
 
   .help-banner { padding: 20px; }
   .server-address-box { flex-direction: column; align-items: flex-start; }
