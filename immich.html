@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photos — Teancum's Home Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ───── NAVIGATION ───── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">🏠</span>
+        <span>Teancum's Home Lab</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="jellyfin.html" class="nav__link">Movies &amp; TV</a></li>
+        <li><a href="immich.html" class="nav__link active">Photos</a></li>
+        <li><a href="https://immich.teancumshomelab.com/auth/login" target="_blank" class="nav__link nav__link--cta">Open Immich →</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ───── PAGE HERO ───── -->
+  <section class="page-hero page-hero--immich">
+    <div class="container">
+      <p class="hero__eyebrow">Your private photo library</p>
+      <h1 class="page-hero__title">Photos &amp; Memories with <span style="color:var(--immich)">Immich</span></h1>
+      <p class="page-hero__sub">Auto-backup, search, and share — all private, all yours.</p>
+      <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" class="btn btn--immich">Open Immich Now →</a>
+    </div>
+  </section>
+
+  <!-- ───── WHAT IS IT ───── -->
+  <section class="section explainer">
+    <div class="container explainer__grid">
+      <div class="explainer__text">
+        <h2>What is Immich?</h2>
+        <p>
+          Immich is like Google Photos or iCloud — but completely private and stored on
+          Teancum's home server. No company can see your photos. No storage limits (within
+          reason). No monthly fees.
+        </p>
+        <p>
+          Once you set up the mobile app, your photos and videos back up automatically
+          whenever you're on Wi-Fi. You can then view, search, and share them from any
+          browser or the app.
+        </p>
+      </div>
+      <div class="explainer__highlights">
+        <div class="highlight-item">
+          <span class="highlight-icon">🔄</span>
+          <div><strong>Auto-backup</strong><br /><small>Photos back up silently in the background</small></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🔍</span>
+          <div><strong>Smart search</strong><br /><small>Find photos by face, place, or what's in them</small></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">👨‍👩‍👧</span>
+          <div><strong>Shared albums</strong><br /><small>Share collections with family instantly</small></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🗺️</span>
+          <div><strong>Memory map</strong><br /><small>See where in the world your photos were taken</small></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🔒</span>
+          <div><strong>100% private</strong><br /><small>Your photos never leave the home server</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── STEP BY STEP ───── -->
+  <section class="section guide" id="guide">
+    <div class="container">
+      <h2 class="section__title">Getting started — step by step</h2>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 1</div>
+        <h3>Sign in on the web</h3>
+        <p>
+          Open <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" class="inline-link">immich.teancumshomelab.com</a>
+          in any browser. Enter your username and password (provided by Teancum). You'll land on
+          your photo timeline — empty at first, until you set up backup.
+        </p>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 2</div>
+        <h3>Install the mobile app for auto-backup</h3>
+        <p>This is the most important step — it's what keeps your photos safe automatically.</p>
+        <div class="app-download-row">
+          <div class="app-download">
+            <strong>📱 iPhone / iPad</strong>
+            <ol>
+              <li>Open the App Store</li>
+              <li>Search for <strong>"Immich"</strong></li>
+              <li>Download and open it</li>
+              <li>Enter the server address: <code>https://immich.teancumshomelab.com</code></li>
+              <li>Sign in with your username and password</li>
+            </ol>
+          </div>
+          <div class="app-download">
+            <strong>🤖 Android</strong>
+            <ol>
+              <li>Open the Google Play Store</li>
+              <li>Search for <strong>"Immich"</strong></li>
+              <li>Download and open it</li>
+              <li>Enter the server address: <code>https://immich.teancumshomelab.com</code></li>
+              <li>Sign in with your username and password</li>
+            </ol>
+          </div>
+        </div>
+        <div class="tip">💡 <strong>Tip:</strong> After logging in, go to the app settings and enable <strong>Background Backup</strong>. Your photos will now back up silently whenever you're on Wi-Fi — you don't have to do anything else.</div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 3</div>
+        <h3>Browse your photo timeline</h3>
+        <p>
+          Once your photos have backed up, you'll see a beautiful timeline view — photos
+          sorted by the most recent first. Scroll down to go further back in time. Tap or
+          click any photo to view it full screen.
+        </p>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 4</div>
+        <h3>Create an album</h3>
+        <p>
+          Albums are a great way to organize memories — a holiday, a birthday, a year.
+          Click <strong>Albums</strong> in the left menu, then <strong>+ Create Album</strong>.
+          Give it a name, then browse your timeline to add photos to it.
+        </p>
+        <div class="tip">💡 <strong>Tip:</strong> You can share an album with another Immich user — perfect for sharing holiday photos with family.</div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 5</div>
+        <h3>Search for anything</h3>
+        <p>
+          Click the magnifying glass icon and type anything — "beach", "birthday cake",
+          "dogs", or a person's name. Immich uses AI to understand what's in your photos
+          without you having to tag them manually.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── FEATURES TOUR ───── -->
+  <section class="section features-tour" id="features">
+    <div class="container">
+      <h2 class="section__title">Explore what Immich can do</h2>
+      <div class="tour-grid">
+        <div class="tour-card">
+          <div class="tour-card__icon">📅</div>
+          <h3>Timeline</h3>
+          <p>All your photos in chronological order. Scroll back through years of memories at a glance.</p>
+        </div>
+        <div class="tour-card">
+          <div class="tour-card__icon">👤</div>
+          <h3>People</h3>
+          <p>Immich recognizes faces automatically. Tap a person's name to see every photo they appear in.</p>
+        </div>
+        <div class="tour-card">
+          <div class="tour-card__icon">🗺️</div>
+          <h3>Map</h3>
+          <p>See a world map dotted with your photos. Click any cluster to see the memories from that place.</p>
+        </div>
+        <div class="tour-card">
+          <div class="tour-card__icon">📁</div>
+          <h3>Albums</h3>
+          <p>Group photos into albums for events, trips, or people. Share them with others on the server.</p>
+        </div>
+        <div class="tour-card">
+          <div class="tour-card__icon">🤖</div>
+          <h3>Smart Search</h3>
+          <p>Type what you're looking for — a colour, an animal, a scene — and Immich finds it for you.</p>
+        </div>
+        <div class="tour-card">
+          <div class="tour-card__icon">🌅</div>
+          <h3>Memories</h3>
+          <p>"On this day" — Immich shows you photos from the same date in previous years, just like Apple Photos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FAQ ───── -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <h2 class="section__title">Frequently asked questions</h2>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary>Will this replace my iCloud / Google Photos backup?</summary>
+          <p>It can work alongside it, or replace it — your choice. Immich backs up a separate copy. If you want to turn off iCloud/Google Photos to save money, just make sure Immich is running well first.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How much storage do I have?</summary>
+          <p>Storage is managed by Teancum on the server. If you're getting close to a limit, he'll let you know. In general, don't worry about it — just back up normally.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I delete photos from my phone after backup?</summary>
+          <p>Yes, once photos are backed up to Immich you can safely delete them from your phone. They'll remain on the server. Just double-check the backup completed first.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can my family see my photos?</summary>
+          <p>No — your photos are private to your account by default. You choose what to share and with whom, through shared albums.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does backup use my mobile data?</summary>
+          <p>By default, Immich only backs up when you're on Wi-Fi. You can turn on cellular backup in the app settings if you want faster uploads, but it's off by default to save your data.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>I lost my phone — are my photos safe?</summary>
+          <p>Yes! As long as the photos were backed up before you lost the phone, they're safely stored on Teancum's server. Just log in from a new device.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">🏠 Teancum's Home Lab</span>
+          <p>Private. Reliable. Always on.</p>
+        </div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="jellyfin.html">Movies &amp; TV Guide</a>
+          <a href="https://jellyfin.teancumshomelab.com/" target="_blank">Open Jellyfin</a>
+          <a href="https://immich.teancumshomelab.com/auth/login" target="_blank">Open Immich</a>
+        </div>
+      </div>
+      <p class="footer__copy">Hosted with ❤️ by Teancum</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

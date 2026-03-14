@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teancum's Home Lab — Your Private Streaming &amp; Photos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ───── NAVIGATION ───── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">🏠</span>
+        <span>Teancum's Home Lab</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="jellyfin.html" class="nav__link">Movies &amp; TV</a></li>
+        <li><a href="immich.html" class="nav__link">Photos</a></li>
+        <li><a href="#access" class="nav__link nav__link--cta">How to Access</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ───── HERO ───── -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content container">
+      <p class="hero__eyebrow">Welcome to your private media library</p>
+      <h1 class="hero__title">
+        Your movies, shows &amp; memories —<br />
+        <span class="gradient-text">always available, just for you.</span>
+      </h1>
+      <p class="hero__subtitle">
+        No subscriptions. No ads. No data harvesting.<br />
+        Stream anything, view your photos, from any device — anywhere.
+      </p>
+      <div class="hero__actions">
+        <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="btn btn--jellyfin">
+          🎬 Open Movies &amp; TV
+        </a>
+        <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" class="btn btn--immich">
+          📷 Open Photos
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll to learn more</span>
+      <div class="hero__arrow"></div>
+    </div>
+  </section>
+
+  <!-- ───── WHAT'S AVAILABLE ───── -->
+  <section class="features section" id="features">
+    <div class="container">
+      <h2 class="section__title">What's available to you</h2>
+      <p class="section__sub">Two powerful apps — set up and managed so you don't have to.</p>
+      <div class="feature-grid">
+
+        <div class="feature-card feature-card--jellyfin">
+          <div class="feature-card__icon">🎬</div>
+          <h3 class="feature-card__title">Movies &amp; TV Shows</h3>
+          <p class="feature-card__desc">
+            Stream a huge personal library of movies and TV series in stunning quality.
+            Works on your phone, tablet, smart TV, laptop — or any web browser.
+          </p>
+          <ul class="feature-list">
+            <li>✔ HD &amp; 4K streaming</li>
+            <li>✔ Watch on any device</li>
+            <li>✔ Resume where you left off</li>
+            <li>✔ Subtitles in many languages</li>
+            <li>✔ No ads, ever</li>
+          </ul>
+          <div class="feature-card__actions">
+            <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="btn btn--jellyfin btn--sm">
+              Open Jellyfin →
+            </a>
+            <a href="jellyfin.html" class="btn btn--ghost btn--sm">How to use it</a>
+          </div>
+        </div>
+
+        <div class="feature-card feature-card--immich">
+          <div class="feature-card__icon">📷</div>
+          <h3 class="feature-card__title">Photo &amp; Video Backup</h3>
+          <p class="feature-card__desc">
+            Your memories, safely stored and beautifully organized. Automatic backup
+            from your phone, facial recognition, and easy sharing — all private.
+          </p>
+          <ul class="feature-list">
+            <li>✔ Auto-backup from your phone</li>
+            <li>✔ Search by face, place, or date</li>
+            <li>✔ Create and share albums</li>
+            <li>✔ View a live map of memories</li>
+            <li>✔ 100% private — no cloud snooping</li>
+          </ul>
+          <div class="feature-card__actions">
+            <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" class="btn btn--immich btn--sm">
+              Open Immich →
+            </a>
+            <a href="immich.html" class="btn btn--ghost btn--sm">How to use it</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── APP SHOWCASE ───── -->
+  <section class="showcase section">
+    <div class="container">
+
+      <div class="showcase__row">
+        <div class="showcase__text">
+          <span class="showcase__badge badge--jellyfin">Jellyfin</span>
+          <h2>Your personal Netflix,<br />without the monthly bill.</h2>
+          <p>
+            Jellyfin is your own private streaming service. Every movie and TV show in the
+            library is hand-picked. Browse by genre, search for anything, and jump right in.
+            It remembers what you've watched and picks up exactly where you left off — even
+            if you switch from your phone to your TV.
+          </p>
+          <a href="jellyfin.html" class="btn btn--jellyfin">See how to get started →</a>
+        </div>
+        <div class="showcase__visual showcase__visual--jellyfin">
+          <div class="mock-screen">
+            <div class="mock-screen__bar"></div>
+            <div class="mock-screen__content">
+              <div class="mock-grid">
+                <div class="mock-card"></div><div class="mock-card"></div>
+                <div class="mock-card"></div><div class="mock-card"></div>
+                <div class="mock-card"></div><div class="mock-card"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase__row showcase__row--reverse">
+        <div class="showcase__text">
+          <span class="showcase__badge badge--immich">Immich</span>
+          <h2>Your photos &amp; videos,<br />beautifully preserved.</h2>
+          <p>
+            Immich automatically backs up every photo and video from your phone the moment
+            you connect to Wi-Fi. Browse your memories in a gorgeous timeline, search by
+            face or location, and create shared albums with family — all in complete privacy.
+            Think of it as Google Photos, but yours alone.
+          </p>
+          <a href="immich.html" class="btn btn--immich">See how to get started →</a>
+        </div>
+        <div class="showcase__visual showcase__visual--immich">
+          <div class="mock-screen">
+            <div class="mock-screen__bar"></div>
+            <div class="mock-screen__content">
+              <div class="mock-masonry">
+                <div class="mock-photo mock-photo--tall"></div>
+                <div class="mock-photo"></div>
+                <div class="mock-photo"></div>
+                <div class="mock-photo mock-photo--wide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── HOW IT WORKS ───── -->
+  <section class="how-it-works section" id="access">
+    <div class="container">
+      <h2 class="section__title">Getting started is easy</h2>
+      <p class="section__sub">Three simple steps and you're in.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3>Get your login</h3>
+          <p>Teancum will set up an account for you. You'll receive a username and password — that's all you need.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3>Open the app</h3>
+          <p>Click the links on this page (or bookmark them). Sign in with the credentials provided. Done.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3>Enjoy</h3>
+          <p>Browse, stream, and explore. Need help? Visit the guide pages linked in the menu above.</p>
+        </div>
+      </div>
+      <div class="how-it-works__cta">
+        <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="btn btn--jellyfin">🎬 Go to Movies &amp; TV</a>
+        <a href="https://immich.teancumshomelab.com/auth/login" target="_blank" class="btn btn--immich">📷 Go to Photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">🏠 Teancum's Home Lab</span>
+          <p>Private. Reliable. Always on.</p>
+        </div>
+        <div class="footer__links">
+          <a href="jellyfin.html">Movies &amp; TV Guide</a>
+          <a href="immich.html">Photos Guide</a>
+          <a href="https://jellyfin.teancumshomelab.com/" target="_blank">Open Jellyfin</a>
+          <a href="https://immich.teancumshomelab.com/auth/login" target="_blank">Open Immich</a>
+        </div>
+      </div>
+      <p class="footer__copy">Hosted with ❤️ by Teancum</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

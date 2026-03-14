@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies &amp; TV — Teancum's Home Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ───── NAVIGATION ───── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">🏠</span>
+        <span>Teancum's Home Lab</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="jellyfin.html" class="nav__link active">Movies &amp; TV</a></li>
+        <li><a href="immich.html" class="nav__link">Photos</a></li>
+        <li><a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="nav__link nav__link--cta">Open Jellyfin →</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ───── PAGE HERO ───── -->
+  <section class="page-hero page-hero--jellyfin">
+    <div class="container">
+      <p class="hero__eyebrow">Your personal streaming service</p>
+      <h1 class="page-hero__title">Movies &amp; TV with <span style="color:var(--jellyfin)">Jellyfin</span></h1>
+      <p class="page-hero__sub">Everything you need to start watching — explained simply.</p>
+      <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="btn btn--jellyfin">Open Jellyfin Now →</a>
+    </div>
+  </section>
+
+  <!-- ───── WHAT IS IT ───── -->
+  <section class="section explainer">
+    <div class="container explainer__grid">
+      <div class="explainer__text">
+        <h2>What is Jellyfin?</h2>
+        <p>
+          Think of Jellyfin as your own personal Netflix — but better. There are no monthly fees,
+          no ads, and no one tracking what you watch. It's a private streaming service that lives
+          on Teancum's home server.
+        </p>
+        <p>
+          You can watch movies and TV shows from any device with a web browser: your phone,
+          tablet, laptop, desktop, or smart TV. The library is hand-picked and always growing.
+        </p>
+      </div>
+      <div class="explainer__highlights">
+        <div class="highlight-item">
+          <span class="highlight-icon">📺</span>
+          <div><strong>Stream in HD &amp; 4K</strong><br /><small>Crystal clear picture on any screen</small></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">📱</span>
+          <div><strong>Any device</strong><br /><small>Phone, tablet, TV, computer</small></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🔖</span>
+          <div><strong>Resume anywhere</strong><br /><small>Pick up where you left off</small></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🌍</span>
+          <div><strong>Subtitles</strong><br /><small>Multiple languages available</small></div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🚫</span>
+          <div><strong>Zero ads</strong><br /><small>Uninterrupted watching, always</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── STEP BY STEP GUIDE ───── -->
+  <section class="section guide" id="guide">
+    <div class="container">
+      <h2 class="section__title">How to watch — step by step</h2>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 1</div>
+        <h3>Open Jellyfin in your browser</h3>
+        <p>
+          Go to <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="inline-link">jellyfin.teancumshomelab.com</a>
+          in any web browser (Chrome, Safari, Firefox, Edge — they all work).
+          You can also bookmark it for easy access later.
+        </p>
+        <div class="tip">💡 <strong>Tip:</strong> On your phone? Open this link in your phone's browser. You can also "Add to Home Screen" so it works like an app.</div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 2</div>
+        <h3>Sign in with your credentials</h3>
+        <p>
+          Enter the username and password that Teancum gave you. If you've forgotten them,
+          just ask! Check the "Remember me" box so you don't have to type it every time.
+        </p>
+        <div class="tip">💡 <strong>Tip:</strong> Your login is just for you. Don't share it — if you want to give access to a family member, ask Teancum to set up a separate account.</div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 3</div>
+        <h3>Browse the library</h3>
+        <p>
+          After logging in you'll see the home screen with recently added content and
+          suggestions. Use the top menu to browse <strong>Movies</strong> or <strong>TV Shows</strong>.
+          You can also use the search bar (magnifying glass icon) to find something specific.
+        </p>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 4</div>
+        <h3>Pick something and press play</h3>
+        <p>
+          Click any movie or show thumbnail to open it. You'll see a description, cast, and
+          rating. Hit the big <strong>Play</strong> button to start watching. For TV shows,
+          choose a season and episode first.
+        </p>
+        <div class="tip">💡 <strong>Tip:</strong> If the video looks blurry or buffers, click the settings gear icon during playback and lower the quality. 1080p is usually the sweet spot.</div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step__num">Step 5</div>
+        <h3>Add subtitles if needed</h3>
+        <p>
+          During playback, click the speech bubble icon (or press <kbd>S</kbd>) to choose
+          subtitles. You can pick English or other languages. Subtitles can also be turned off
+          if you don't need them.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── DEVICE GUIDES ───── -->
+  <section class="section devices" id="devices">
+    <div class="container">
+      <h2 class="section__title">Watching on different devices</h2>
+      <div class="device-grid">
+
+        <div class="device-card">
+          <div class="device-card__icon">💻</div>
+          <h3>Computer (any browser)</h3>
+          <p>Open <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="inline-link">jellyfin.teancumshomelab.com</a> in Chrome, Edge, Firefox, or Safari. Sign in and watch. No app needed.</p>
+        </div>
+
+        <div class="device-card">
+          <div class="device-card__icon">📱</div>
+          <h3>iPhone / iPad</h3>
+          <ol>
+            <li>Open Safari</li>
+            <li>Go to <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="inline-link">jellyfin.teancumshomelab.com</a></li>
+            <li>Sign in and watch directly in the browser</li>
+            <li><em>Optional:</em> Install <strong>Infuse</strong> from the App Store for a premium experience — ask Teancum for setup help</li>
+          </ol>
+        </div>
+
+        <div class="device-card">
+          <div class="device-card__icon">🤖</div>
+          <h3>Android Phone / Tablet</h3>
+          <ol>
+            <li>Open Chrome or any browser</li>
+            <li>Go to <a href="https://jellyfin.teancumshomelab.com/" target="_blank" class="inline-link">jellyfin.teancumshomelab.com</a></li>
+            <li>Sign in and stream</li>
+            <li><em>Optional:</em> Install the <strong>Jellyfin Android app</strong> from Google Play for an app-like experience</li>
+          </ol>
+        </div>
+
+        <div class="device-card">
+          <div class="device-card__icon">📺</div>
+          <h3>Smart TV</h3>
+          <p>Many smart TVs have a browser built in — search for Jellyfin from there. Alternatively, for the best experience:</p>
+          <ul>
+            <li><strong>Android TV / Google TV:</strong> Install the Jellyfin app from the Play Store</li>
+            <li><strong>Fire TV Stick:</strong> Search for Jellyfin in the Amazon Appstore</li>
+            <li><strong>Apple TV:</strong> Use the Infuse app</li>
+          </ul>
+        </div>
+
+        <div class="device-card">
+          <div class="device-card__icon">🔵</div>
+          <h3>Chromecast</h3>
+          <p>Start playing a video in your browser on your computer or phone. Click the cast icon (looks like a rectangle with Wi-Fi waves) in the Jellyfin player to send it to your TV.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FAQ ───── -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <h2 class="section__title">Frequently asked questions</h2>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary>The video keeps stopping or buffering — what do I do?</summary>
+          <p>This usually means your internet connection is slower than needed for high-quality video. During playback, click the gear icon and select a lower quality (try 720p or 1080p instead of 4K). This usually fixes it instantly.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>I forgot my password. How do I get back in?</summary>
+          <p>Just contact Teancum and he'll reset it for you. There's no self-service password reset — this keeps the server secure.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I download movies to watch offline?</summary>
+          <p>Yes, but only on mobile apps. In the Jellyfin Android app or iOS via compatible players, there's a download option. In the browser version, downloads aren't available.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can multiple people watch at the same time?</summary>
+          <p>Yes! Multiple users can watch simultaneously. Each person should have their own account so their watch history and progress stays separate.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>I don't see a movie I want. Can it be added?</summary>
+          <p>Possibly! Just ask Teancum and he'll look into adding it to the library.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is this legal?</summary>
+          <p>Jellyfin is legal software. Whether any specific content is available depends on Teancum's library. This is a private service for approved users only.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">🏠 Teancum's Home Lab</span>
+          <p>Private. Reliable. Always on.</p>
+        </div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="immich.html">Photos Guide</a>
+          <a href="https://jellyfin.teancumshomelab.com/" target="_blank">Open Jellyfin</a>
+          <a href="https://immich.teancumshomelab.com/auth/login" target="_blank">Open Immich</a>
+        </div>
+      </div>
+      <p class="footer__copy">Hosted with ❤️ by Teancum</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
